@@ -1,0 +1,45 @@
+<!--
+  Generated template for the ProductDetailsPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar class="ion-header-custom">
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Product Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="product-details">
+  <ion-card>
+    <ion-card-content padding>
+      <img src="img/dummyItem.png" alt="" class="productImage"/>
+    </ion-card-content>
+    <ion-row>
+      <ion-col width-67>
+          <div class="productTitle"><span>Elegent Pink Dresses</span></div>
+      </ion-col>
+      <ion-col width-33>
+          <div><span block class="button priceBtn">$500</span></div>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card class="descriptionMain">
+    <ion-card-content>
+      <div class="mainDiv" padding>
+        <i class="fa fa-plus iconPlus" aria-hidden="true" (click)="expandDesc()"></i>
+        <span class="h1" style="" class="descHeading">Description</span>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="addToCartBtnDiv">
+    <button block class="button addToCartBtn">Add to Cart</button>
+  </div>
+</ion-content>
