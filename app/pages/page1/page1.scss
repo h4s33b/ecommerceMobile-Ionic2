@@ -1,8 +1,8 @@
 .card-background-page {
   font-family: 'Roboto', sans-serif;
-
   .searchCard{
     min-height: 50px;
+    margin-top: 15px;
     .iconSearch{
           color:#a6a6ad;
               position: absolute;
@@ -10,17 +10,55 @@
     left: 20%;
     }
     input[type="text"]{
-        padding-top: 4px;
         font-family: 'Noto Sans', sans-serif;
         border:none;
         position: absolute;
         left: 30%;
         width: 60%;
+        font-size: 20px;
+        margin-top: -2px;
       }
   }
+  .centerLineDiv{
+    width: 20%;
+    border-top: 2px solid #bec0c1;
+    margin: 0px auto;
+    margin-top: 20px;
+  }
+  .centerLineBottomDiv{
+    width: 20%;
+    border-top: 2px solid #bec0c1;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .centerHeading{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+    .isOdd {
+      margin: 10px 15px 10px 5px;
+    }
+    .isEven {
+      margin: 10px 5px 10px 15px;
+        clear: both;
+    }
+    .isSecond{
+      margin-top:10px; 
+    }
 
   .ion-card-Main {
     position: relative;
+    width: calc(50% - 20px);
+    float: left;
+    height: 300px;
+    .itemImg{
+      margin: 10px auto;
+      width: auto;
+      max-height: 220px;
+    }
     //text-align: center;
     .ribbon-wrapper-green {
       width: 85px;
@@ -30,7 +68,6 @@
       top: -3px;
       right: -3px;
     }
-
     .ribbon-green {
       font: bold 15px Sans-Serif;
       color: #333;
@@ -60,18 +97,33 @@
 
   .card-title {
     position: absolute;
-    top: 36%;
-    font-size: 2.0em;
+    top: 80%;
+    font-size: 1.3em;
     width: 100%;
     font-weight: bold;
-    color: #fff;
+    color: #000;
+    text-align: center;
   }
 
   .card-subtitle {
     font-size: 1.0em;
     position: absolute;
-    top: 52%;
+    top: 88%;
     width: 100%;
-    color: #fff;
+    color: #000;
+    text-align: center;
+  }
+
+   .loadMoreBtnDiv{
+    overflow: hidden;
+    margin: 0px auto;
+    padding-top: 20px;
+    margin-bottom: 45px;
+    width: 50%;
+    .loadMoreBtn{
+      background-color: #3a4144;
+      height: 50px;
+      font-weight: 100;
+    }
   }
 }

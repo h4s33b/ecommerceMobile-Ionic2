@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar class="blueNavbar">
     <button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page Uno</ion-title>
+    <ion-title>Ecommerce</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -19,6 +19,28 @@
       </div>
     </ion-card-content>
   </ion-card>
+
+  <div class="centerLineDiv"></div>
+
+  <div style="text-align: center;">
+    <h1 class="centerHeading">POPULAR PRODUCTS</h1>
+  </div>
+
+  <div class="centerLineBottomDiv"></div>
+
+
+  <ion-card *ngFor='let product of products; #index = index' class="ion-card-Main" [class.isOdd]="index%2==1" [class.isEven]="index%2==0"  [class.isSecond]="index==1">
+    <img src="img/itemImage.png" class="itemImg"/>
+    <div class="card-title">{{product.productName}}</div>
+    <div class="card-subtitle">{{product.productPrice}}</div>
+    <div class="ribbon-wrapper-green">
+      <div class="ribbon-green">NEWS</div>
+    </div>
+  </ion-card>
+
+  <div class="loadMoreBtnDiv">
+    <button block class="button loadMoreBtn">Load More</button>
+  </div>
 
   <!--<ion-card (click)="goToOtherPage()">
     <img src="img/mainpic1.png" />

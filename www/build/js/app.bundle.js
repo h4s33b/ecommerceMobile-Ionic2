@@ -67,6 +67,14 @@ var product_details_1 = require('../product-details/product-details');
 var Page1 = (function () {
     function Page1(navCtrl) {
         this.navCtrl = navCtrl;
+        this.products = [
+            { productId: 1, productName: 'Test Product', productDesc: 'This is test Product.', productPrice: '$500' },
+            { productId: 2, productName: 'Test Product 2', productDesc: 'This is test Product 2.', productPrice: '$500' },
+            { productId: 3, productName: 'Test Product 3', productDesc: 'This is test Product 3.', productPrice: '$500' },
+            { productId: 4, productName: 'Test Product 4', productDesc: 'This is test Product 4.', productPrice: '$500' },
+            { productId: 3, productName: 'Test Product 3', productDesc: 'This is test Product 3.', productPrice: '$500' },
+            { productId: 4, productName: 'Test Product 4', productDesc: 'This is test Product 4.', productPrice: '$500' }
+        ];
     }
     Page1.prototype.goToOtherPage = function () {
         //push another page onto the history stack
