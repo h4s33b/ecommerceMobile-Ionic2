@@ -1,8 +1,27 @@
 .card-background-page {
+  font-family: 'Roboto', sans-serif;
 
-  ion-card {
+  .searchCard{
+    min-height: 50px;
+    .iconSearch{
+          color:#a6a6ad;
+              position: absolute;
+    font-size: 25px;
+    left: 20%;
+    }
+    input[type="text"]{
+        padding-top: 4px;
+        font-family: 'Noto Sans', sans-serif;
+        border:none;
+        position: absolute;
+        left: 30%;
+        width: 60%;
+      }
+  }
+
+  .ion-card-Main {
     position: relative;
-    text-align: center;
+    //text-align: center;
     .ribbon-wrapper-green {
       width: 85px;
       height: 88px;

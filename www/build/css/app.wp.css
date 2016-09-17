@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900';
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700';
 audio,
 canvas,
 progress,
@@ -9186,51 +9187,64 @@ body {
   font-size: 1.4rem;
   background-color: #fff; }
 
-.card-background-page ion-card {
-  position: relative;
-  text-align: center; }
-  .card-background-page ion-card .ribbon-wrapper-green {
-    width: 85px;
-    height: 88px;
-    overflow: hidden;
+.card-background-page {
+  font-family: 'Roboto', sans-serif; }
+  .card-background-page .searchCard {
+    min-height: 50px; }
+    .card-background-page .searchCard .iconSearch {
+      color: #a6a6ad;
+      position: absolute;
+      font-size: 25px;
+      left: 20%; }
+    .card-background-page .searchCard input[type="text"] {
+      padding-top: 4px;
+      font-family: 'Noto Sans', sans-serif;
+      border: none;
+      position: absolute;
+      left: 30%;
+      width: 60%; }
+  .card-background-page .ion-card-Main {
+    position: relative; }
+    .card-background-page .ion-card-Main .ribbon-wrapper-green {
+      width: 85px;
+      height: 88px;
+      overflow: hidden;
+      position: absolute;
+      top: -3px;
+      right: -3px; }
+    .card-background-page .ion-card-Main .ribbon-green {
+      font: bold 15px Sans-Serif;
+      color: #333;
+      text-align: center;
+      text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      position: relative;
+      padding: 7px 0;
+      left: -5px;
+      top: 15px;
+      width: 120px;
+      background-color: #BFDC7A;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
+      background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
+      background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+      color: #6a6340;
+      box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
+  .card-background-page .card-title {
     position: absolute;
-    top: -3px;
-    right: -3px; }
-  .card-background-page ion-card .ribbon-green {
-    font: bold 15px Sans-Serif;
-    color: #333;
-    text-align: center;
-    text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    position: relative;
-    padding: 7px 0;
-    left: -5px;
-    top: 15px;
-    width: 120px;
-    background-color: #BFDC7A;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#BFDC7A), to(#8EBF45));
-    background-image: -webkit-linear-gradient(top, #BFDC7A, #8EBF45);
-    background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
-    color: #6a6340;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3); }
-
-.card-background-page .card-title {
-  position: absolute;
-  top: 36%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #fff; }
-
-.card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
-  width: 100%;
-  color: #fff; }
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff; }
+  .card-background-page .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 52%;
+    width: 100%;
+    color: #fff; }
 
 .product-details {
   font-family: 'Roboto', sans-serif; }
