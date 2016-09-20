@@ -17,6 +17,8 @@
 
 @import "../pages/product-details/product-details";
 
+@import "../pages/checkout/checkout.scss";
+
 
 /* Global Styling*/
 
@@ -32,7 +34,7 @@ ion-content{
   .toolbar-background{
     background-color: #67b0d6 !important;
   }
-  
+
 }
 
 .bar-button-default{
@@ -41,4 +43,12 @@ ion-content{
 
 .toolbar-title{
   color: #ffffff;
+}
+
+.checkOutNavbar{
+  background-color: #38474f !important;
+  min-height: 44px;
+  .toolbar-background{
+    border-bottom-width: 0px;
+  }
 }
