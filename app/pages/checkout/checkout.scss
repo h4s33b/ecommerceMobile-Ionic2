@@ -1,0 +1,35 @@
+.checkout {
+  background: url('../../img/cartBackground.png');
+  background-color:rgba(0, 0, 0, 0.5);
+
+  .cartFormInputDiv{
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    min-height: 50px;
+    .cartFormInput{
+      width: 100%;
+      border: none;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+    ion-select{
+      max-width: 100%;
+      .select-icon{
+
+      }
+    }
+  }
+
+  .cartFormInputDivTwo{
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    width: 48%;
+    min-height: 50px;
+    .cartFormInput{
+      width: 100%;
+      border: none;
+      padding: 20px;
+      font-family: 'Roboto', sans-serif;
+    }
+  }
+}
