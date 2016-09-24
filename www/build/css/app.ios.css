@@ -8927,3 +8927,37 @@ ion-content {
   min-height: 44px; }
   .checkOutNavbar .toolbar-background {
     border-bottom-width: 0px; }
+
+/* Cart PopOver */
+.cartPopOverOuter {
+  margin-bottom: 20px; }
+  .cartPopOverOuter .popover-viewport {
+    background-color: #f6846a; }
+  .cartPopOverOuter .cartPopOver {
+    width: 100%;
+    background-color: #f6846a; }
+    .cartPopOverOuter .cartPopOver .toolbar .toolbar-background {
+      background-color: transparent !important; }
+    .cartPopOverOuter .cartPopOver .itemsCard {
+      padding: 0px; }
+      .cartPopOverOuter .cartPopOver .itemsCard .avatarColumn {
+        padding-left: 20px; }
+        .cartPopOverOuter .cartPopOver .itemsCard .avatarColumn .avatarColumnImg {
+          border-radius: 50%; }
+      .cartPopOverOuter .cartPopOver .itemsCard .itemDetails {
+        padding: 5px 0px 0px 20px;
+        color: #a6a6ad; }
+        .cartPopOverOuter .cartPopOver .itemsCard .itemDetails .itemDetailsHeading {
+          font-weight: bold; }
+        .cartPopOverOuter .cartPopOver .itemsCard .itemDetails .itemPrice {
+          margin-top: 25px; }
+    .cartPopOverOuter .cartPopOver .totalAmount {
+      color: #ffffff;
+      text-align: center; }
+      .cartPopOverOuter .cartPopOver .totalAmount .totalAmountHeading {
+        font-weight: 400; }
+  .cartPopOverOuter .popover-content {
+    width: 100%;
+    max-height: 500px;
+    top: 0px !important;
+    left: 0px !important; }

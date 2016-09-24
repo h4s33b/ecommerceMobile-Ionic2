@@ -52,3 +52,61 @@ ion-content{
     border-bottom-width: 0px;
   }
 }
+
+
+/* Cart PopOver */
+
+.cartPopOverOuter{
+  margin-bottom: 20px;
+  
+  .popover-viewport{
+    background-color: #f6846a;
+  }
+  
+  .cartPopOver{
+    width: 100%;
+    background-color: #f6846a;
+
+    .toolbar{
+      .toolbar-background{
+        background-color: transparent !important;
+      }
+    }
+
+    .itemsCard{
+      padding: 0px;
+      .avatarColumn{
+        padding-left: 20px;
+        .avatarColumnImg{
+          border-radius: 50%;
+        }
+      }
+
+      .itemDetails{
+        padding: 5px 0px 0px 20px;
+        color:#a6a6ad;
+        .itemDetailsHeading{
+          font-weight: bold;
+        }
+        .itemPrice{
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .totalAmount{
+      color: #ffffff;
+      text-align: center;
+      .totalAmountHeading{
+        font-weight: 400;
+      }
+    }
+  }
+
+  .popover-content{
+    width: 100%;
+    max-height: 500px;
+    top: 0px !important;
+    left: 0px !important;
+  }
+}
