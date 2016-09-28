@@ -1,112 +1,124 @@
 // http://ionicframework.com/docs/v2/theming/
-
-
 // App Shared Imports
 // --------------------------------------------------
 // These are the imports which make up the design of this app.
 // By default each design mode includes these shared imports.
 // App Shared Sass variables belong in app.variables.scss.
-
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,900';
-
 @import 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700';
-
 @import "../pages/page1/page1";
-
 @import "../pages/page2/page2";
-
 @import "../pages/product-details/product-details";
-
 @import "../pages/checkout/checkout.scss";
-
 
 /* Global Styling*/
 
-ion-content{
+ion-content {
   background-color: #e8e8e8;
 }
 
-.toolbar-background{
+.toolbar-background {
   background-color: #38474f !important;
 }
 
-.blueNavbar{
-  .toolbar-background{
+.blueNavbar {
+  .toolbar-background {
     background-color: #67b0d6 !important;
   }
 
 }
 
-.bar-button-default{
+.bar-button-default {
   color: #ffffff;
 }
 
-.toolbar-title{
+.toolbar-title {
   color: #ffffff;
 }
 
-.checkOutNavbar{
+.checkOutNavbar {
   background-color: #38474f !important;
   min-height: 44px;
-  .toolbar-background{
+  .toolbar-background {
     border-bottom-width: 0px;
   }
 }
 
-
 /* Cart PopOver */
 
-.cartPopOverOuter{
-  margin-bottom: 20px;
-  
-  .popover-viewport{
+.cartPopOverOuter {
+
+  .popover-viewport {
     background-color: #f6846a;
   }
-  
-  .cartPopOver{
+
+  .cartPopOver {
     width: 100%;
     background-color: #f6846a;
+    .mainPopoverDiv{
+      margin-top: 44px;
+    }
 
-    .toolbar{
-      .toolbar-background{
+    .toolbar {
+      position: fixed;
+      top: 0px;
+      background-color: #f6846a;
+      .toolbar-background {
         background-color: transparent !important;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
       }
     }
 
-    .itemsCard{
+    .itemsCard {
       padding: 0px;
-      .avatarColumn{
+      .avatarColumn {
         padding-left: 20px;
-        .avatarColumnImg{
+        .avatarColumnImg {
           border-radius: 50%;
         }
       }
 
-      .itemDetails{
+      .centerText{
+        text-align: center;
+      }
+
+      .arrowButtons {
+        background-color: transparent;
+        color: #a6a6ad;
+        padding: 0;
+        margin: 0px;
+        height: auto;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .itemDetails {
         padding: 5px 0px 0px 20px;
-        color:#a6a6ad;
-        .itemDetailsHeading{
+        color: #a6a6ad;
+        .itemDetailsHeading {
           font-weight: bold;
         }
-        .itemPrice{
+        .itemPrice {
           margin-top: 25px;
         }
       }
     }
 
-    .totalAmount{
+    .totalAmount {
       color: #ffffff;
       text-align: center;
-      .totalAmountHeading{
+      .totalAmountHeading {
         font-weight: 400;
       }
     }
   }
 
-  .popover-content{
+  .popover-content {
     width: 100%;
     max-height: 500px;
     top: 0px !important;
     left: 0px !important;
+    border-radius: 0px;
   }
 }

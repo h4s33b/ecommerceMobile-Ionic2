@@ -10,4 +10,12 @@ export class PopoverPage {
   close() {
     this.viewCtrl.dismiss();
   }
+
+  increaseItem(ind){
+    console.log("Increased",ind);
+  }
+
+  decreaseItem(ind){
+    console.log("Decreased",ind);
+  }
 }

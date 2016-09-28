@@ -18,6 +18,12 @@ var PopoverPage = (function () {
     PopoverPage.prototype.close = function () {
         this.viewCtrl.dismiss();
     };
+    PopoverPage.prototype.increaseItem = function (ind) {
+        console.log("Increased", ind);
+    };
+    PopoverPage.prototype.decreaseItem = function (ind) {
+        console.log("Decreased", ind);
+    };
     PopoverPage = __decorate([
         core_1.Component({
             templateUrl: 'build/popovers/cartPopOver.html'

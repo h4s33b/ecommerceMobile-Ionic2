@@ -1,41 +1,53 @@
 <div class="cartPopOver">
-    <ion-toolbar>
-        <button menuToggle (click)="close($event)">
-            <ion-icon name="menu"></ion-icon>
-        </button>
-        <ion-title>Toolbar</ion-title>
-        <ion-buttons end>
-            <button (click)="close($event)">
-                <i class="fa fa-times" style="font-size: 24px;"></i>
-            </button>
-        </ion-buttons>
-    </ion-toolbar>
+  <ion-toolbar>
+    <button menuToggle (click)="close($event)">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cart</ion-title>
+    <ion-buttons end>
+      <button (click)="close($event)">
+        <i class="fa fa-times" style="font-size: 24px;"></i>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 
-    <div>
-        <ion-card *ngFor="let a of [1,2,3,4,5,6]">
-            <ion-card-content class="itemsCard">
-                <ion-row>
-                    <ion-col width-25 class="avatarColumn">
-                        <ion-thumbnail item-left>
-                            <img src="img/img_not_found.gif" class="avatarColumnImg">
-                        </ion-thumbnail>
-                    </ion-col>
-                    <ion-col width-50>
-                        <div class="itemDetails">
-                            <h2 class="itemDetailsHeading">Muffin Dress</h2>
-                            <div>Size : S</div>
-                            <div class="itemPrice">$ 25,00</div>
-                        </div>
-                    </ion-col>
-                    <ion-col width-25>
+  <div class="mainPopoverDiv">
+    <ion-card *ngFor="let a of [1,2,3,4,5,6];let i = index">
+      <ion-card-content class="itemsCard">
+        <ion-row>
+          <ion-col width-25 class="avatarColumn">
+            <ion-thumbnail item-left>
+              <img src="img/img_not_found.gif" class="avatarColumnImg">
+            </ion-thumbnail>
+          </ion-col>
+          <ion-col width-50>
+            <div class="itemDetails">
+              <h2 class="itemDetailsHeading">Muffin Dress</h2>
 
-                    </ion-col>
-                </ion-row>
-            </ion-card-content>
-        </ion-card>
+              <div>Size : S</div>
+              <div class="itemPrice">$ 25,00</div>
+            </div>
+          </ion-col>
+          <ion-col width-25 class="centerText">
+            <div>
+              <button class="button arrowButtons" type="button"
+                      style=" " (click)="increaseItem(i)">
+                <i class="fa fa-angle-up" aria-hidden="true" style=""></i>
+              </button>
+            </div>
+            <div>2</div>
+            <div>
+              <button class="button arrowButtons" type="button" (click)="decreaseItem(i)">
+                <i class="fa fa-angle-down" aria-hidden="true" style=""></i>
+              </button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
 
-        <div class="totalAmount">
-            <h1 class="totalAmountHeading">$ 327,00</h1>
-        </div>
+    <div class="totalAmount">
+      <h1 class="totalAmountHeading">$ 327,00</h1>
     </div>
+  </div>
 </div>
