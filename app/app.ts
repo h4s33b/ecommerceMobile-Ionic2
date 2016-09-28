@@ -5,6 +5,7 @@ import { StatusBar } from 'ionic-native';
 import { Page1 } from './pages/page1/page1';
 import { Page2 } from './pages/page2/page2';
 import { ProductDetailsPage } from './pages/product-details/product-details';
+import {billingDetailsPage} from './pages/billing-details/billing-details';
 import {CheckoutPage} from './pages/checkout/checkout';
 
 @Component({
@@ -24,6 +25,7 @@ class MyApp {
     this.pages = [
       { title: 'Page uno', component: Page1 },
       { title: 'Page dos', component: ProductDetailsPage },
+      { title: 'Billing Details', component: billingDetailsPage },
       { title: 'Checkout', component: CheckoutPage }
     ];
 

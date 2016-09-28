@@ -1,35 +1,43 @@
 .checkout {
-  background: url('../../img/cartBackground.png');
-  background-color:rgba(0, 0, 0, 0.5);
+  background-image: none;
+  width: 100%;
+  background-color: #e8e8e8;
 
-  .cartFormInputDiv{
-    background-color: #ffffff;
-    margin-bottom: 15px;
-    min-height: 50px;
-    .cartFormInput{
-      width: 100%;
-      border: none;
-      padding: 20px;
-      font-family: 'Roboto', sans-serif;
-    }
-    ion-select{
-      max-width: 100%;
-      .select-icon{
-
+  .itemsCard {
+    padding: 0px;
+    .avatarColumn {
+      padding-left: 20px;
+      .avatarColumnImg {
+        border-radius: 50%;
       }
     }
-  }
 
-  .cartFormInputDivTwo{
-    background-color: #ffffff;
-    margin-bottom: 15px;
-    width: 48%;
-    min-height: 50px;
-    .cartFormInput{
-      width: 100%;
-      border: none;
-      padding: 20px;
-      font-family: 'Roboto', sans-serif;
+    .centerText {
+      text-align: center;
+    }
+    .itemDetails {
+      padding: 15px 0px 0px 20px;
+      color: #323c3f;
+      .itemDetailsHeading {
+        font-weight: 500;
+      }
+      .itemDetailsContent {
+        position: relative;
+        margin-left: -2px;
+        .itemDetailsContentBtnFirst {
+          width: 50%;
+          height: 1.8em;
+          font-size: 1.2rem;
+          background-color: #e2e4e4
+        }
+        .itemDetailsContentBtnSecond {
+          position: absolute;
+          width: 50%;
+          height: 1.8em;
+          font-size: 1.2rem;
+          background-color: #e2e4e4
+        }
+      }
     }
   }
 }

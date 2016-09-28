@@ -9366,6 +9366,38 @@ body {
       padding: 20px;
       font-family: 'Roboto', sans-serif; }
 
+.checkout {
+  background-image: none;
+  width: 100%;
+  background-color: #e8e8e8; }
+  .checkout .itemsCard {
+    padding: 0px; }
+    .checkout .itemsCard .avatarColumn {
+      padding-left: 20px; }
+      .checkout .itemsCard .avatarColumn .avatarColumnImg {
+        border-radius: 50%; }
+    .checkout .itemsCard .centerText {
+      text-align: center; }
+    .checkout .itemsCard .itemDetails {
+      padding: 15px 0px 0px 20px;
+      color: #323c3f; }
+      .checkout .itemsCard .itemDetails .itemDetailsHeading {
+        font-weight: 500; }
+      .checkout .itemsCard .itemDetails .itemDetailsContent {
+        position: relative;
+        margin-left: -2px; }
+        .checkout .itemsCard .itemDetails .itemDetailsContent .itemDetailsContentBtnFirst {
+          width: 50%;
+          height: 1.8em;
+          font-size: 1.2rem;
+          background-color: #e2e4e4; }
+        .checkout .itemsCard .itemDetails .itemDetailsContent .itemDetailsContentBtnSecond {
+          position: absolute;
+          width: 50%;
+          height: 1.8em;
+          font-size: 1.2rem;
+          background-color: #e2e4e4; }
+
 /* Global Styling*/
 ion-content {
   background-color: #e8e8e8; }
