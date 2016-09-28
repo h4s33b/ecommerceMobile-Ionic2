@@ -134,10 +134,12 @@ var core_1 = require('@angular/core');
 var ionic_angular_1 = require('ionic-angular');
 var ionic_angular_2 = require('ionic-angular');
 var cart_popover_1 = require('../../Popovers/cart.popover');
+var ionic_angular_3 = require('ionic-angular');
 var Page1 = (function () {
-    function Page1(navCtrl, popoverCtrl) {
+    function Page1(navCtrl, popoverCtrl, alertCtrl) {
         this.navCtrl = navCtrl;
         this.popoverCtrl = popoverCtrl;
+        this.alertCtrl = alertCtrl;
         this.products = [
             { productId: 1, productName: 'Test Product', productDesc: 'This is test Product.', productPrice: '$500' },
             { productId: 2, productName: 'Test Product 2', productDesc: 'This is test Product 2.', productPrice: '$500' },
@@ -156,11 +158,20 @@ var Page1 = (function () {
         //causing the nav controller to animate the new page in
         //this.navCtrl.push(ProductDetailsPage);
     };
+    Page1.prototype.presentAlert = function () {
+        var alert = this.alertCtrl.create({
+            title: 'Congrats!',
+            subTitle: '<div class="popupDiv"></div><div class="popupDivText">Thank You for shopping.</div>',
+            buttons: ['OKAY'],
+            cssClass: "popupClass"
+        });
+        alert.present();
+    };
     Page1 = __decorate([
         core_1.Component({
             templateUrl: 'build/pages/page1/page1.html'
         }), 
-        __metadata('design:paramtypes', [ionic_angular_2.NavController, ionic_angular_1.PopoverController])
+        __metadata('design:paramtypes', [ionic_angular_2.NavController, ionic_angular_1.PopoverController, ionic_angular_3.AlertController])
     ], Page1);
     return Page1;
 }());
